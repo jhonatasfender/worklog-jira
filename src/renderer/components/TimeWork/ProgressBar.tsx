@@ -8,6 +8,8 @@ type ProgressBarProps = {
   strokeWidth: number;
   circleOneStroke: string;
   circleTwoStroke: string;
+  text: string;
+  timeTask: string;
 };
 
 const ProgressBar = ({
@@ -16,6 +18,8 @@ const ProgressBar = ({
   strokeWidth,
   circleOneStroke,
   circleTwoStroke,
+  text,
+  timeTask,
 }: ProgressBarProps): JSX.Element => {
   const [offset, setOffset] = useState(0);
 
@@ -48,9 +52,15 @@ const ProgressBar = ({
           strokeDasharray={circumference}
           strokeDashoffset={offset}
         />
-        <S.SVGCircleText x={`${center}`} y={`${center}`}>
-          {progress}
-        </S.SVGCircleText>
+        <S.SVGTimeTotal x={center} y={center - 15}>
+          {text}
+        </S.SVGTimeTotal>
+        <S.SVGTextTask x={center} y={center + 30}>
+          AURORA-15619
+        </S.SVGTextTask>
+        <S.SVGTimeTask x={center} y={center + 60}>
+          {timeTask}
+        </S.SVGTimeTask>
       </S.SVG>
     </>
   );

@@ -21,8 +21,24 @@ export const SVGCircle = styled.circle`
   transition: stroke-dashoffset 850ms ease-in-out;
 `;
 
-export const SVGCircleText = styled.text`
+export const SVGTimeTotal = styled.text`
   font-size: 2rem;
+  text-anchor: middle;
+  fill: #d9edfe;
+  font-weight: 400;
+  font-family: 'Lato', monospace;
+`;
+
+export const SVGTextTask = styled.text`
+  font-size: 1rem;
+  text-anchor: middle;
+  fill: #d9edfe;
+  font-weight: 400;
+  font-family: 'Lato', monospace;
+`;
+
+export const SVGTimeTask = styled.text`
+  font-size: 0.8rem;
   text-anchor: middle;
   fill: #d9edfe;
   font-weight: 400;
