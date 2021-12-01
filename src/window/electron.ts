@@ -2,6 +2,8 @@ import { app, BrowserWindow } from 'electron';
 import isDev from 'electron-is-dev';
 import path from 'path';
 
+import '../server/index';
+
 function createWindow(): void {
   const win = new BrowserWindow({
     alwaysOnTop: true,

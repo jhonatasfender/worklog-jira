@@ -1,0 +1,15 @@
+{
+  "display": "Server",
+  "extends": "../../tsconfig.global.json",
+  "compilerOptions": {
+    "outDir": "../../dist/server",
+    "incremental": true,
+    "lib": ["es2021"],
+    "module": "commonjs",
+    "target": "es2021",
+    "noEmit": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false
+  }
+}

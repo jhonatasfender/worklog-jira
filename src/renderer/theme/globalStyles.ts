@@ -12,6 +12,11 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    height: 29.9rem;
+  }
+  
+  #root {
+    height: 29.9rem;
   }
 `;
 

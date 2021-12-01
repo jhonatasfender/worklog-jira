@@ -1,13 +1,17 @@
-import TimeWork from './components/TimeWork';
+import { BrowserRouter } from 'react-router-dom';
+
 import Toolbar from './components/Toolbar';
+import Router from './router';
 import GlobalStyle from './theme/globalStyles';
 
 const App = (): JSX.Element => {
   return (
     <>
-      <GlobalStyle />
-      <Toolbar />
-      <TimeWork />
+      <BrowserRouter>
+        <GlobalStyle />
+        <Toolbar />
+        <Router />
+      </BrowserRouter>
     </>
   );
 };
